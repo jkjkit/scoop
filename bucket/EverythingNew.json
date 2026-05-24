@@ -19,6 +19,11 @@
     "pre_install": [
         "foreach ($file in @('Everything.ini', 'Filters.csv', 'Bookmarks.csv')) {",
         "    if (!(Test-Path \"$dir\\$file\")) { New-Item -Path \"$dir\\$file\" -ItemType File -Force | Out-Null }",
+        "}",
+        "$iniPath = \"$dir\\Everything.ini\"",
+        "$content = Get-Content $iniPath -Raw -ErrorAction SilentlyContinue",
+        "if ($content -notmatch 'appdata=') {",
+        "    Add-Content $iniPath \"`r`nappdata=$dir\"",
         "}"
     ],
     "installer": {
