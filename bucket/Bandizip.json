@@ -1,0 +1,19 @@
+{
+    "version": "7.x-portable",
+    "description": "Bandizip - 一款集压缩/解压/浏览/编辑为一体的极速全功能压缩软件",
+    "homepage": "https://www.bandisoft.com/bandizip/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://dl-b.feejii.com/storage/files/2026/05/24/5/5001424865/17796148163921.gz?t=6a12cb81&rlimit=20&us=BJumAK4A2F&sign=08b5dd1e082a585fd9a95a354c633eab&download_name=Bandizip.7z&p=1609627-1609627-44167173894",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "Bandizip.exe",
+    "shortcuts": [
+        [
+            "Bandizip.exe",
+            "Bandizip"
+        ]
+    ]
+}
