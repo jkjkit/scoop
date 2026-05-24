@@ -1,8 +1,8 @@
 {
-    "version": "Repack6.42.63",
+    "version": "6.42.63",
     "description": "Internet Download Manager (IDM) - 一款强大的多线程下载加速工具",
     "homepage": "https://www.internetdownloadmanager.com/",
-    "license": "Shareware",
+    "license": "Repack",
     "architecture": {
         "64bit": {
             "url": "https://dogpan.com/f/ERkOhp/IDM6.42.63.7z",
