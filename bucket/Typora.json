@@ -1,11 +1,11 @@
 {
-    "version": "Repeak",
+    "version": "1.11.6",
     "description": "Typora - 一款极致极简、跨平台的 Markdown 编辑器与阅读器",
     "homepage": "https://typora.io/",
-    "license": "Shareware",
+    "license": "Repack",
     "architecture": {
         "64bit": {
-            "url": "https://dl-b.feejii.com/storage/files/2026/05/24/5/5001424865/17796163990389.gz?t=6a12d1b5&rlimit=20&us=v819Az1QdG&sign=a99990716323f3c8d9eccf016bd7c32b&download_name=Typora.7z",
+            "url": "https://dogpan.com/f/G6m6iA/Typora1.11.6.7z",
             "hash": "a48b0263a67f225053bd73d63442f768935b7fc24e797a117fd8e853da9e85f2"
         }
     },
