@@ -12,7 +12,7 @@
     "bin": "Everything64.exe",
     "shortcuts": [
         [
-            "Everything64.exe",
+            "Everything.exe",
             "Everything"
         ]
     ],
