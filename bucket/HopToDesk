@@ -1,0 +1,23 @@
+{
+    "version": "latest",
+    "description": "HopToDesk - 一款免费、开源且支持端到端加密的跨平台远程桌面控制与屏幕共享工具",
+    "homepage": "https://www.hoptodesk.com/",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.hoptodesk.com/download/HopToDesk64.exe",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "HopToDesk64.exe",
+    "shortcuts": [
+        [
+            "HopToDesk64.exe",
+            "HopToDesk"
+        ]
+    ],
+    "persist": [
+        "HopToDesk.ini",
+        "service.log"
+    ]
+}
