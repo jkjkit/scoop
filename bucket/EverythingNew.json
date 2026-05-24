@@ -27,10 +27,10 @@
         "}"
     ],
     "installer": {
-        "script": "if (is_admin) { Start-Process \"$dir\\Everything64.exe\" -ArgumentList \"-install-service\" -Wait } else { warning \"需要管理员权限来安装 Everything 系统服务，否则可能无法搜索 NTFS 盘符。\" }"
+        "script": "if (is_admin) { Start-Process \"$dir\\Everything.exe\" -ArgumentList \"-install-service\" -Wait } else { warning \"需要管理员权限来安装 Everything 系统服务，否则可能无法搜索 NTFS 盘符。\" }"
     },
     "uninstaller": {
-        "script": "if (is_admin) { Start-Process \"$dir\\Everything64.exe\" -ArgumentList \"-uninstall-service\" -Wait }"
+        "script": "if (is_admin) { Start-Process \"$dir\\Everything.exe\" -ArgumentList \"-uninstall-service\" -Wait }"
     },
     "persist": [
         "Everything.ini",
