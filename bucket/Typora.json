@@ -5,8 +5,8 @@
     "license": "Shareware",
     "architecture": {
         "64bit": {
-            "url": "https://dl-b.feejii.com/storage/files/2026/05/24/5/5001424865/17796163990389.gz?t=6a12d1b5&rlimit=20&us=v819Az1QdG&sign=a99990716323f3c8d9eccf016bd7c32b&download_name=Typora.7z&p=1609627-1609627-44171119112",
-            "hash": "请替换为真实的SHA256哈希值"
+            "url": "https://dl-b.feejii.com/storage/files/2026/05/24/5/5001424865/17796163990389.gz?t=6a12d1b5&rlimit=20&us=v819Az1QdG&sign=a99990716323f3c8d9eccf016bd7c32b&download_name=Typora.7z",
+            "hash": "a48b0263a67f225053bd73d63442f768935b7fc24e797a117fd8e853da9e85f2"
         }
     },
     "bin": "Typora.exe",
