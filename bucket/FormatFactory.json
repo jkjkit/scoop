@@ -9,12 +9,6 @@
             "hash": "1D1C76E07BF306C81E98309DDA2771BA6274112684EFA512C842B1BC138CF416"
         }
     },
-    "installer": {
-        "args": [
-            "/S",
-            "/D=$dir"
-        ]
-    },
     "bin": "FormatFactory.exe",
     "shortcuts": [
         [
