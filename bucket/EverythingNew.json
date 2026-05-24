@@ -1,0 +1,30 @@
+{
+    "version": "1.5.0.1413b",
+    "description": "Everything 1.5 Alpha - 极致快速的本地文件与文件夹搜索工具（1.5 重构预览版）",
+    "homepage": "https://www.voidtools.com/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.voidtools.com/Everything-1.5.0.1413b.x64.zip",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "Everything64.exe",
+    "shortcuts": [
+        [
+            "Everything64.exe",
+            "Everything"
+        ]
+    ],
+    "installer": {
+        "script": "if (is_admin) { Start-Process \"$dir\\Everything64.exe\" -ArgumentList \"-install-service\" -Wait } else { warning \"需要管理员权限来安装 Everything 系统服务，否则可能无法搜索 NTFS 盘符。\" }"
+    },
+    "uninstaller": {
+        "script": "if (is_admin) { Start-Process \"$dir\\Everything64.exe\" -ArgumentList \"-uninstall-service\" -Wait }"
+    },
+    "persist": [
+        "Everything.ini",
+        "Filters.csv",
+        "Bookmarks.csv"
+    ]
+}
