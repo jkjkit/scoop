@@ -1,0 +1,19 @@
+{
+    "version": "7.1",
+    "description": "qView - 一款极致实用、极简且快速的图片查看器",
+    "homepage": "https://interversehq.com/qview/",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jurplel/qView/releases/download/7.1/qView-7.1-win64.zip",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "qView.exe",
+    "shortcuts": [
+        [
+            "qView.exe",
+            "qView"
+        ]
+    ]
+}
