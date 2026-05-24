@@ -1,0 +1,19 @@
+{
+    "version": "0.0.8",
+    "description": "MusicFree - 插件化、定制化、无广告的本地音乐播放器",
+    "homepage": "https://github.com/maotoumao/MusicFreeDesktop",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/maotoumao/MusicFreeDesktop/releases/download/v0.0.8/MusicFree-0.0.8-win32-x64-portable.zip",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "MusicFree.exe",
+    "shortcuts": [
+        [
+            "MusicFree.exe",
+            "MusicFree"
+        ]
+    ]
+}
