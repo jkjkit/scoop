@@ -13,7 +13,7 @@
     "bin": "LaserCAD.exe",
     "shortcuts": [
         [
-            "LaserCAD.exe",
+            "AWCPrograms\\LaserCAD.exe",
             "LaserCAD"
         ]
     ]
