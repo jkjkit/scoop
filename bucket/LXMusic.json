@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.2/lx-music-desktop-v2.12.2-win_x64-green.7z",
-            "hash": "cbf7224f8d689fb91c6e1c2106e2ea5575529f7f45ec7777174db2744799042b"
+            "hash": "77a14f8983ff5cdb2b89798949fa2d06ed7062d46d4a53e476a8067169a9e6e5"
         }
     },
     "bin": "lx-music-desktop.exe",
