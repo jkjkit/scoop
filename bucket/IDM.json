@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dl-b.feejii.com/storage/files/2026/05/24/5/5001424865/17796156843785.gz?t=6a12ced8&rlimit=20&us=LLvNTgFEff&sign=ce40dee800ff6f1767062d55f737f061&download_name=IDM.7z",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "ded357312d5712007de2ff7ae17d7210a2835b98a96701a4a6c76390fba1230b"
         }
     },
     "bin": "IDMan.exe",
