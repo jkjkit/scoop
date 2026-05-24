@@ -1,13 +1,12 @@
 {
-    "version": "latest",
+    "version": "2.12.2",
     "description": "LX Music Desktop - 一个基于 Electron + Vue 开发的音乐软件",
     "homepage": "https://github.com/lyswhut/lx-music-desktop",
     "license": "Apache-2.0",
-    "notes": "由于未使用硬编码哈希，请在首次或更新安装时加上 --no-hash 参数。",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v$matchVersion/lx-music-desktop-v$matchVersion-win_x64-green.7z",
-            "hash": "skipped"
+            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v$version/lx-music-desktop-v$version-win_x64-green.7z",
+            "hash": "请替换为真实的SHA256哈希值"
         }
     },
     "bin": "lx-music-desktop.exe",
@@ -20,10 +19,7 @@
     "env": {
         "PORTABLE_EXECUTABLE_DIR": "$dir"
     },
-    "checkver": {
-        "url": "https://github.com/lyswhut/lx-music-desktop/releases/latest",
-        "re": "/releases/download/v(?<version>[\\d.]+)/lx-music-desktop-v[\\d.]+-win_x64-green.7z"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
