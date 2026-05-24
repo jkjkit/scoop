@@ -9,7 +9,7 @@
             "hash": "9680A2AD221F3F02636DC597E48C81F459D77212314DB1168B5D4505AA8BC8F8"
         }
     },
-    "extract_dir": "LaserCAD\\AWCPrograms",
+    "extract_dir": "AWCPrograms",
     "bin": "LaserCAD.exe",
     "shortcuts": [
         [
