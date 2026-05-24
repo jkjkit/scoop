@@ -1,0 +1,27 @@
+{
+    "version": "2.0",
+    "description": "TrayChrome - 一个将全局快捷键与特定 Chrome 标签页或应用绑定的托盘工具",
+    "homepage": "https://github.com/cornradio/tray-chrome",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cornradio/tray-chrome/releases/download/v2.0/TrayChrome.exe#/TrayChrome.exe",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "TrayChrome.exe",
+    "shortcuts": [
+        [
+            "TrayChrome.exe",
+            "TrayChrome"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cornradio/tray-chrome/releases/download/v$version/TrayChrome.exe#/TrayChrome.exe"
+            }
+        }
+    }
+}
