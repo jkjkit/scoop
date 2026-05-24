@@ -1,0 +1,19 @@
+{
+    "version": "1.0.0",
+    "description": "DevInk - 一款面向开发者或设计师的效率工具",
+    "homepage": "https://techartlife.com",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://a9s1-raw.techartlife.com/a9s1/update/devink-win-Portable.zip",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "DevInk.exe",
+    "shortcuts": [
+        [
+            "DevInk.exe",
+            "DevInk"
+        ]
+    ]
+}
