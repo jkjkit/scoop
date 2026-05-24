@@ -13,8 +13,8 @@
     ],
     "shortcuts": [
         [
-            "HiBitUninstaller-Portable.exe",
-            "HiBit Uninstaller"
+            "HiBitUninstaller.exe",
+            "HiBitUninstaller"
         ]
     ],
     "persist": "HiBitUninstaller",
