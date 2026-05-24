@@ -4,7 +4,7 @@
     "homepage": "https://www.hibitsoft.ir/Uninstaller.html",
     "license": "Repack",
     "url": "https://dogpan.com/f/KrqZS4/HiBitUninstaller4.0.10.7z",
-    "hash": "986b1e07de8037cda70e4d2cf01010e2660042f79f233bbac91846de94741646",
+    "hash": "2c0e7939beec48115c1417c5d275d775e0e390809405a45090bf54d7ae2f336f",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\HiBitUninstaller\")) {",
         "    ensure \"$dir\\HiBitUninstaller\"",
