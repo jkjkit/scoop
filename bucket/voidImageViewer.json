@@ -1,0 +1,27 @@
+{
+    "version": "1.0.0.15",
+    "description": "voidImageViewer - 一款来自 voidtools (Everywhere开发商) 的快速图片查看器",
+    "homepage": "https://github.com/voidtools/voidImageViewer",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/voidtools/voidImageViewer/releases/download/1.0.0.15/voidImageViewer-1.0.0.15.x64.en-US.zip",
+            "hash": "8301EB2CABE997D42CF5CF9E8A69F223A5BB2875DF50837BCE54BD63707D9335"
+        }
+    },
+    "bin": "voidImageViewer.exe",
+    "shortcuts": [
+        [
+            "voidImageViewer.exe",
+            "voidImageViewer"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/voidtools/voidImageViewer/releases/download/$version/voidImageViewer-$version.x64.en-US.zip"
+            }
+        }
+    }
+}
