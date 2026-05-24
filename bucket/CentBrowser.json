@@ -1,0 +1,22 @@
+{
+    "version": "5.2.1168.83",
+    "description": "百分浏览器 (Cent Browser) - 一款追求极致便携、增强增强、极致顺滑的 Chromium 改版浏览器",
+    "homepage": "https://www.centbrowser.cn/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://static.centbrowser.cn/win_stable/5.2.1168.83/centbrowser_5.2.1168.83_x64.exe",
+            "hash": "9f4f3acb791a401d45d290ab86cdc9ca5bc312472392cfedd6e65c1f15b527ad"
+        }
+    },
+    "bin": "chrome.exe",
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Cent Browser"
+        ]
+    ],
+    "env": {
+        "CHROME_USER_DATA_DIR": "$dir\\User Data"
+    }
+}
