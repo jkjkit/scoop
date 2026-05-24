@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/maotoumao/MusicFreeDesktop/releases/download/v0.0.8/MusicFree-0.0.8-win32-x64-portable.zip",
-            "hash": "7a427581ba9383637ca8d2ff280cc0dca3f309b674b09b9eb251e626cc9b9e0f"
+            "hash": "b84ef7feced17a95dd704db9968867726008d782619d511656e5ece059951399"
         }
     },
     "installer": {
