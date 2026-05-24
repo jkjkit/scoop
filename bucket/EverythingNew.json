@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.voidtools.com/Everything-1.5.0.1413b.x64.zip",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "638ba3b4e187b07bd73cdee24bf7863a962ec865716e6a7e521cbb04f7edd29f"
         }
     },
     "bin": "Everything64.exe",
