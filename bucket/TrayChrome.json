@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/cornradio/tray-chrome/releases/download/v2.0/TrayChrome.exe#/TrayChrome.exe",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "523c7a070a6b65530c716e2eaaa35aa5ea63f7b3ee0153d937b795c1959643e2"
         }
     },
     "bin": "TrayChrome.exe",
