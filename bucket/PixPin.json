@@ -1,0 +1,23 @@
+{
+    "version": "3.1.4.0",
+    "description": "PixPin - 结合了长截图、截长图、贴图、OCR 文字识别等功能的极致截图工具",
+    "homepage": "https://pixpin.cn",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.pixpin.cn/PixPin_cn_zh-cn_3.1.4.0.zip",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "PixPin.exe",
+    "shortcuts": [
+        [
+            "PixPin.exe",
+            "PixPin"
+        ]
+    ],
+    "persist": [
+        "data",
+        "config.ini"
+    ]
+}
