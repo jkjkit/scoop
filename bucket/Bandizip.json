@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dl-b.feejii.com/storage/files/2026/05/24/5/5001424865/17796148163921.gz?t=6a12cb81&rlimit=20&us=BJumAK4A2F&sign=08b5dd1e082a585fd9a95a354c633eab&download_name=Bandizip.7z&p=1609627-1609627-44167173894",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "98375f59497249b4022cc63a0ba2fdc826d661eec3d2a22a554582c4f4d8663c"
         }
     },
     "bin": "Bandizip.exe",
