@@ -1,2 +1,1 @@
-# scoop
-For windows
+Windows open source software
