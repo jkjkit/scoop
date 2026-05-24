@@ -5,27 +5,18 @@
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/maotoumao/MusicFreeDesktop/releases/download/v0.0.8/MusicFree-0.0.8-win32-x64-portable.zip",
-            "hash": "b84ef7feced17a95dd704db9968867726008d782619d511656e5ece059951399"
+            "url": "https://dogpan.com/f/PNyYI3/MusicFree0.0.8.7z",
+            "hash": "1BA7004FCAAD463857177D1573F91365DFF0514EE73E71533DEA5246C7CB058D"
         }
     },
-    "installer": {
-        "script": [
-            "if (Test-Path \"$dir\\MusicFree-0.0.8-win32-x64-portable.zip\") {",
-            "    Write-Host '检测到双重嵌套压缩包，正在启动底层二次解压...' -ForegroundColor Cyan",
-            "    Expand-Archive -Path \"$dir\\MusicFree-0.0.8-win32-x64-portable.zip\" -DestinationPath \"$dir\" -Force",
-            "    Remove-Item \"$dir\\MusicFree-0.0.8-win32-x64-portable.zip\" -Force",
-            "}"
-        ]
-    },
-    "bin": "MusicFree-0.0.8-win32-x64-portable\\MusicFree.exe",
+    "bin": "MusicFree.exe",
     "shortcuts": [
         [
-            "MusicFree-0.0.8-win32-x64-portable\\MusicFree.exe",
+            "MusicFree.exe",
             "MusicFree"
         ]
     ],
     "persist": [
-        "MusicFree-0.0.8-win32-x64-portable\\portable"
+        "portable"
     ]
 }
