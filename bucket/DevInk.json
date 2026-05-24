@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "description": "DevInk - 一款面向开发者或设计师的效率工具",
-    "homepage": "https://techartlife.com",
+    "homepage": "https://devink.techartlife.com/",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
