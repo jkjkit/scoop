@@ -9,10 +9,10 @@
             "hash": "3a8bf4846d3935e3efbbea82d95fa1085102681c336c12ddb3555fc1c7292eda"
         }
     },
-    "bin": "DevInk.exe",
+    "bin": "app.exe",
     "shortcuts": [
         [
-            "DevInk.exe",
+            "app.exe",
             "DevInk"
         ]
     ]
