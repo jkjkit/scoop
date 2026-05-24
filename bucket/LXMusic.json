@@ -5,8 +5,8 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v$version/lx-music-desktop-v$version-win_x64-green.7z",
-            "hash": "请替换为真实的SHA256哈希值"
+            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.2/lx-music-desktop-v2.12.2-win_x64-green.7z",
+            "hash": "cbf7224f8d689fb91c6e1c2106e2ea5575529f7f45ec7777174db2744799042b"
         }
     },
     "bin": "lx-music-desktop.exe",
@@ -18,13 +18,5 @@
     ],
     "env": {
         "PORTABLE_EXECUTABLE_DIR": "$dir"
-    },
-    "checkver": "github",
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v$version/lx-music-desktop-v$version-win_x64-green.7z"
-            }
-        }
     }
 }
