@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/EchoHS/GeekezBrowser/releases/download/v1.5.4/GeekEZ.Browser-1.5.4-win-x64-portable.zip",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "4708464263d7e629c13dab11d5747399b01348eb571e33872bc01dcb5a864196"
         }
     },
     "bin": "chrome.exe",
