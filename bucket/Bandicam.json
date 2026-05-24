@@ -1,0 +1,20 @@
+{
+    "version": "8.1.0.2516",
+    "description": "Bandicam - 一款高性能、轻量级的屏幕录制与游戏录制工具",
+    "homepage": "https://www.bandicam.com/",
+    "license": "Shareware",
+    "architecture": {
+        "64bit": {
+            "url": "https://dl-b.feejii.com/storage/files/2025/03/02/5/5001424865/17408913996725.gz?t=6a12ca30&rlimit=20&us=XttbiOxi1n&sign=614d10b92934393751cc7c64900c3242&download_name=Bandicam_8.1.0.2516.zip&p=1609627-1609627-5688925800",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "BandicamPortable.exe",
+    "shortcuts": [
+        [
+            "BandicamPortable.exe",
+            "Bandicam"
+        ]
+    ],
+    "persist": "Data"
+}
