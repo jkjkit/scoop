@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/voidtools/voidImageViewer/releases/download/1.0.0.15/voidImageViewer-1.0.0.15.x64.en-US.zip",
-            "hash": "8301EB2CABE997D42CF5CF9E8A69F223A5BB2875DF50837BCE54BD63707D9335"
+            "hash": "bbffe4f9b292c264a3e7655727b57c692af4e69848d68d7ff05e3eb887967d80"
         }
     },
     "bin": "voidImageViewer.exe",
