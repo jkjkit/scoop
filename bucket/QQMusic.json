@@ -1,34 +1,29 @@
 {
-    "version": "18.06",
-    "description": "QQ音乐去广告精简版",
-    "homepage": "https://www.423down.com/193.html",
-    "depends": "sudo",
-    "extract_dir": "QQMusic",
-    "url": "https://gh.jjj.gv.uy/https://github.com/SayCV/gh-cdn-cvp/releases/download/v1.0.0/qqmusic-v18.06-cvp.exe/#dl.7z",
-    "hash": "4d7067a5f4ae17a0bd7049fc834ab49c51a5f2b61a58c797c9b8a652ed61d0f5",
-    "installer": {
-        "script": "sudo cmd.exe /c \"$dir\\!)绿化处理.bat\""
-    },
-    "uninstaller": {
-        "script": "sudo cmd.exe /c \"$dir\\!)卸载清除.bat\""
-    },
+    "version": "22.22",
+    "description": "The official QQ Music client.",
+    "homepage": "https://y.qq.com/",
+    "license": "Freeware",
+    "notes": "We don't persist your QQMusic data, they are still storaged in '%LOCALAPPDATA%\\Tencent\\QQMusic'.",
+    "url": "https://c.y.qq.com/cgi-bin/file_redirect.fcg?bid=dldir&file=ecosfile%2Fmusic_clntupate%2Fpc%2Fother%2FQQMusic_Setup_2222.exe&sign=1-b8b7717ca56925682c96630879508d7f0868b3ee8999d33a7db7e19299adf01b-69eb199f#/dl.7z",
+    "hash": "fb0ef24d347aff281722e68139727dae548804907040ac0b17b17c562f2599f1",
     "shortcuts": [
         [
             "QQMusic.exe",
-            "QQ音乐"
-        ]
-    ],
-    "bin": [
-        [
-            "QQMusic.exe",
-            "QQMusic"
+            "QQ Music"
         ]
     ],
     "checkver": {
-        "github": "https://github.com/SayCV/gh-cdn-cvp/releases",
-        "regex": "qqmusic-v([\\d.-]+)-cvp.7z"
+        "script": [
+            ". \"$pwd\\bin\\utils.ps1\"",
+            "$dl_info = get_installer_info 'Tencent/QQMusic'",
+            "\"ver:$($dl_info.PackageVersion);\"",
+            "\"x64:$($dl_info.x64.InstallerUrl);\"",
+            "\"hash:$($dl_info.x64_exe.InstallerSha256);\""
+        ],
+        "regex": "ver:(?<version>[^;]+)(?:; x64:(?<x64>[^;]*))?(?:; x86:(?<x86>[^;]*))?(?:; arm64:(?<arm64>[^;]*))?"
     },
     "autoupdate": {
-        "url": "https://gh.jjj.gv.uy/https://github.com/SayCV/gh-cdn-cvp/releases/download/v1.0.0/qqmusic-v$version-cvp.7z"
+        "url": "$matchX64#/dl.7z",
+        "hash": "$matchHash"
     }
 }
