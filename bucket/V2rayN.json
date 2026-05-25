@@ -1,6 +1,6 @@
 {
     "version": "7.22.2",
-    "description": "v2rayN (WPF-based version) is a GUI client for V2Ray, with support for Xray, sing-box, and other compatible cores.",
+    "description": "代理软件",
     "homepage": "https://github.com/2dust/v2rayN",
     "license": "GPL-3.0-only",
     "notes": [
