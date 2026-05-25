@@ -5,24 +5,9 @@
   "license": "Freeware",
   "architecture": {
     "64bit": {
-      "url": "https://dogpan.com/f/YELqUA/DocBox2.12.74.7z",
-      "hash": "720be8d8ba98b46620d775a8108e2c55d18bb192b89b27e336406869374882ca"
+      "url": "https://dogpan.com/f/1wZpiq/DocBox2.12.74.7z",
+      "hash": "14E9D7537E18EE9BE9687F8ACE288095F50743B5898D7CF071532EC9F358DD56"
     }
-  },
-  "pre_install": [
-    "if (Test-Path \"$dir\\DocBox.exe\") {",
-    "  Write-Host '正在静默安装到 Scoop 目录...' -ForegroundColor Cyan",
-    "  Start-Process \"$dir\\DocBox.exe\" -ArgumentList \"/S /D=$dir\" -Wait",
-    "  Remove-Item \"$dir\\DocBox.exe\" -Force -ErrorAction SilentlyContinue",
-    "}"
-  ],
-  "uninstaller": {
-    "script": [
-      "$uninstaller = \"$dir\\uninst.exe\"",
-      "if (Test-Path $uninstaller) {",
-      "  Start-Process $uninstaller -ArgumentList '/S' -Wait",
-      "}"
-    ]
   },
   "bin": "DocBox.exe",
   "shortcuts": [
