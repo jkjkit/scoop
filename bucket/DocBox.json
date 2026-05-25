@@ -11,9 +11,11 @@
     },
     "pre_install": [
         "if (Test-Path \"$dir\\DocBox.exe\") {",
-        "    Write-Host '正在对安装包执行强制物理释放...' -ForegroundColor Cyan",
+        "    Write-Host '正在动态调用本地 7z 引擎执行物理拆包...' -ForegroundColor Cyan",
         "    Rename-Item \"$dir\\DocBox.exe\" \"setup.exe\"",
-        "    & \"$env:PROGRAMDATA\\scoop\\apps\\7zip\\current\\7z.exe\" x \"$dir\\setup.exe\" \"-o$dir\" -y | Out-Null",
+        "    $sevenZip = \"$global:scoopdir\\apps\\7zip\\current\\7z.exe\"",
+        "    if (-not (Test-Path $sevenZip)) { $sevenZip = \"7z.exe\" }",
+        "    & $sevenZip x \"$dir\\setup.exe\" \"-o$dir\" -y | Out-Null",
         "    Remove-Item \"$dir\\setup.exe\" -Force",
         "}"
     ],
