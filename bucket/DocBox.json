@@ -10,6 +10,7 @@
         }
     },
     "installer": {
+        "file": "DocBox.exe",
         "args": [
             "/S",
             "/D=$dir"
