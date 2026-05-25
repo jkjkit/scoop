@@ -6,7 +6,7 @@
   "architecture": {
     "64bit": {
       "url": "https://dogpan.com/f/1wZpiq/DocBox2.12.74.7z",
-      "hash": "14E9D7537E18EE9BE9687F8ACE288095F50743B5898D7CF071532EC9F358DD56"
+      "hash": "e37b6841aed166d57827ae62dcf1019c7690238efe0d0534d3a5e25b159a2e9c"
     }
   },
   "bin": "DocBox.exe",
