@@ -11,26 +11,19 @@
   },
   "pre_install": [
     "if (Test-Path \"$dir\\DocBox.exe\") {",
-    "  Write-Host '正在静默安装...' -ForegroundColor Cyan",
-    "  & \"$dir\\DocBox.exe\" /S",
-    "  Start-Sleep -Seconds 20",
-    "  $installPath = \"$env:LOCALAPPDATA\\Programs\\DocBox\"",
-    "  if (Test-Path $installPath) {",
-    "    Copy-Item \"$installPath\\*\" \"$dir\" -Recurse -Force",
-    "    Write-Host '已复制到 Scoop 目录' -ForegroundColor Green",
-    "  } else {",
-    "    Write-Host '未找到安装目录，请检查' -ForegroundColor Red",
-    "  }",
+    "  Write-Host '正在静默安装到 Scoop 目录...' -ForegroundColor Cyan",
+    "  Start-Process \"$dir\\DocBox.exe\" -ArgumentList \"/S /D=$dir\" -Wait",
     "  Remove-Item \"$dir\\DocBox.exe\" -Force -ErrorAction SilentlyContinue",
     "}"
   ],
-  "post_install": [
-    "$installPath = \"$env:LOCALAPPDATA\\Programs\\DocBox\"",
-    "if (Test-Path $installPath) {",
-    "  Remove-Item $installPath -Recurse -Force",
-    "  Write-Host '已清理默认安装目录' -ForegroundColor Green",
-    "}"
-  ],
+  "uninstaller": {
+    "script": [
+      "$uninstaller = \"$dir\\uninst.exe\"",
+      "if (Test-Path $uninstaller) {",
+      "  Start-Process $uninstaller -ArgumentList '/S' -Wait",
+      "}"
+    ]
+  },
   "bin": "DocBox.exe",
   "shortcuts": [
     [
