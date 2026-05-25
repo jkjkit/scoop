@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dogpan.com/f/YELqUA/DocBox2.12.74.7z",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "3f868946cb1facd74812870484d163367f300b31"
         }
     },
     "installer": {
