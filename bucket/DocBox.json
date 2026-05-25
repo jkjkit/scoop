@@ -1,0 +1,33 @@
+{
+    "version": "2.12.74",
+    "description": "DocBox - 一款高效、便捷的文档管理与归档工具",
+    "homepage": "https://github.com/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://dogpan.com/f/YELqUA/DocBox2.12.74.7z",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "installer": {
+        "script": [
+            "$exe = Get-ChildItem \"$dir\" -Recurse -Filter \"DocBox.exe\" | Select-Object -First 1",
+            "if ($exe) {",
+            "    $subDir = Split-Path $exe.FullName -Relative -Base $dir",
+            "    if ($subDir) {",
+            "        Write-Host \"检测到嵌套结构，正在自动对齐路径: $subDir\" -ForegroundColor Cyan",
+            "        Set-Content \"$dir\\scoop_sub_dir.txt\" -Value $subDir",
+            "    }",
+            "} else {",
+            "    error \"在解压目录中未找到 DocBox.exe 主程序！\"",
+            "}"
+        ]
+    },
+    "bin": "DocBox.exe",
+    "shortcuts": [
+        [
+            "DocBox.exe",
+            "DocBox"
+        ]
+    ]
+}
