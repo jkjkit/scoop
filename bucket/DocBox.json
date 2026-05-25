@@ -1,7 +1,7 @@
 {
     "version": "2.12.74",
-    "description": "DocBox - 一款高效、便捷的文档管理与归档工具",
-    "homepage": "https://github.com/",
+    "description": "DocBox - 稻壳阅读器，高效、便捷的文档管理与 PDF/XDF/EPUB 归档工具",
+    "homepage": "https://www.daokereader.com/",
     "license": "Freeware",
     "architecture": {
         "64bit": {
@@ -9,18 +9,19 @@
             "hash": "720be8d8ba98b46620d775a8108e2c55d18bb192b89b27e336406869374882ca"
         }
     },
-    "installer": {
-        "file": "DocBox.exe",
-        "args": [
-            "/S",
-            "/D=$dir"
-        ]
-    },
+    "pre_install": [
+        "if (Test-Path \"$dir\\DocBox.exe\") {",
+        "    Write-Host '正在对安装包执行强制物理释放...' -ForegroundColor Cyan",
+        "    Rename-Item \"$dir\\DocBox.exe\" \"setup.exe\"",
+        "    & \"$env:PROGRAMDATA\\scoop\\apps\\7zip\\current\\7z.exe\" x \"$dir\\setup.exe\" \"-o$dir\" -y | Out-Null",
+        "    Remove-Item \"$dir\\setup.exe\" -Force",
+        "}"
+    ],
     "bin": "DocBox.exe",
     "shortcuts": [
         [
             "DocBox.exe",
-            "DocBox"
+            "稻壳阅读器"
         ]
     ]
 }
