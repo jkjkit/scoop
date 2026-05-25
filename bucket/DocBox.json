@@ -1,29 +1,27 @@
 {
-    "version": "2.12.74",
-    "description": "DocBox - 稻壳阅读器，高效、便捷的文档管理与 PDF/XDF/EPUB 归档工具",
-    "homepage": "https://www.daokereader.com/",
-    "license": "Freeware",
-    "architecture": {
-        "64bit": {
-            "url": "https://dogpan.com/f/YELqUA/DocBox2.12.74.7z",
-            "hash": "720be8d8ba98b46620d775a8108e2c55d18bb192b89b27e336406869374882ca"
-        }
-    },
-    "pre_install": [
-        "if (Test-Path \"$dir\\DocBox.exe\") {",
-        "    Write-Host '正在动态调用本地 7z 引擎执行物理拆包...' -ForegroundColor Cyan",
-        "    Rename-Item \"$dir\\DocBox.exe\" \"setup.exe\"",
-        "    $sevenZip = \"$global:scoopdir\\apps\\7zip\\current\\7z.exe\"",
-        "    if (-not (Test-Path $sevenZip)) { $sevenZip = \"7z.exe\" }",
-        "    & $sevenZip x \"$dir\\setup.exe\" \"-o$dir\" -y | Out-Null",
-        "    Remove-Item \"$dir\\setup.exe\" -Force",
-        "}"
-    ],
-    "bin": "DocBox.exe",
-    "shortcuts": [
-        [
-            "DocBox.exe",
-            "稻壳阅读器"
-        ]
+  "version": "2.12.74",
+  "description": "DocBox - 稻壳阅读器，高效、便捷的文档管理与 PDF/XDF/EPUB 归档工具",
+  "homepage": "https://www.daokereader.com/",
+  "license": "Freeware",
+  "architecture": {
+    "64bit": {
+      "url": "https://dogpan.com/f/YELqUA/DocBox2.12.74.7z",
+      "hash": "720be8d8ba98b46620d775a8108e2c55d18bb192b89b27e336406869374882ca"
+    }
+  },
+  "pre_install": [
+    "if (Test-Path \"$dir\\DocBox.exe\") {",
+    "  Write-Host '正在静默安装...' -ForegroundColor Cyan",
+    "  & \"$dir\\DocBox.exe\" /S /D=$dir",
+    "  Start-Sleep -Seconds 15",
+    "  Remove-Item \"$dir\\DocBox.exe\" -Force",
+    "}"
+  ],
+  "bin": "DocBox.exe",
+  "shortcuts": [
+    [
+      "DocBox.exe",
+      "稻壳阅读器"
     ]
+  ]
 }
