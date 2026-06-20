@@ -1,0 +1,39 @@
+{
+    "version": "3.0.0",
+    "description": "CompressO - 开源跨平台视频与图像本地体积压缩工具",
+    "homepage": "https://github.com/codeforreal1/compressO",
+    "license": "AGPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/codeforreal1/compressO/releases/download/3.0.0/CompressO_3.0.0_x64.exe",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "pre_install": [
+        "if (Test-Path \"$dir\\CompressO_3.0.0_x64.exe\") {",
+        "    Write-Host '检测到Tauri安装包，正在动态调用本地7z引擎执行物理拆包...' -ForegroundColor Cyan",
+        "    Rename-Item \"$dir\\CompressO_3.0.0_x64.exe\" \"setup.tmp\"",
+        "    $sevenZip = \"$global:scoopdir\\apps\\7zip\\current\\7z.exe\"",
+        "    if (-not (Test-Path $sevenZip)) { $sevenZip = \"7z.exe\" }",
+        "    & $sevenZip x \"$dir\\setup.tmp\" \"-o$dir\" -y | Out-Null",
+        "    Remove-Item \"$dir\\setup.tmp\" -Force",
+        "}"
+    ],
+    "bin": "CompressO.exe",
+    "shortcuts": [
+        [
+            "CompressO.exe",
+            "CompressO"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/codeforreal1/compressO"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/codeforreal1/compressO/releases/download/$version/CompressO_${version}_x64.exe"
+            }
+        }
+    }
+}
