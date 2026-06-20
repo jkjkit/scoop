@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dogpan.com/f/G6DAUA/zRenamer_v2.1.zip",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "d7d2d8defbc52d9b2d2f03e8e77b40f8b9af83f9b44eaa0a889d2c93fa8e2902"
         }
     },
     "bin": "zRenamer.exe",
