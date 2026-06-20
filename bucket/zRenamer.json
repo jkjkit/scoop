@@ -1,0 +1,19 @@
+{
+    "version": "2.1",
+    "description": "zRenamer - 批量文件重命名工具，支持正则表达式、计数器及替换等丰富规则",
+    "homepage": "https://github.com/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://dogpan.com/f/G6DAUA/zRenamer_v2.1.zip",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "zRenamer.exe",
+    "shortcuts": [
+        [
+            "zRenamer.exe",
+            "zRenamer"
+        ]
+    ]
+}
