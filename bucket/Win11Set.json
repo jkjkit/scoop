@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dogpan.com/f/jRx7CR/Win11Set.exe",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "6004b8521fcb617a318a1d0194e87e3fff0bda9c5d16ae8621e246a675bd590a"
         }
     },
     "bin": "Win11Set.exe",
