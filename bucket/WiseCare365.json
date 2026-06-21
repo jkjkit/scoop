@@ -6,14 +6,14 @@
     "architecture": {
         "64bit": {
             "url": "https://dogpan.com/f/9rlls2/WiseCare365Pro.exe",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "5543576a83e359ef51e0e79799be39120a40ad6ed2bafc7947f984dbb6368bc7"
         }
     },
     "bin": "WiseCare365Pro.exe",
     "shortcuts": [
         [
             "WiseCare365Pro.exe",
-            "Wise Care 365 Pro"
+            "WiseCare365"
         ]
     ]
 }
