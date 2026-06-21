@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.angusj.com/resourcehacker/resource_hacker.zip",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "52f81ee4778070d6aa72d8719a1a68fea2f288005deb02667542754f747776f8"
         }
     },
     "bin": "ResourceHacker.exe",
