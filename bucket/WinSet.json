@@ -1,18 +1,18 @@
 {
-    "version": "1.1.2",
-    "description": "Windows轻松设置 - Windows系统常规快捷设置与综合优化单文件工具",
+    "version": "1.0.0",
+    "description": "WinSet - Windows 系统常规快捷设置与综合优化单文件工具",
     "homepage": "https://github.com/",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://dogpan.com/f/kRzQF5/WindowsSet.exe",
+            "url": "https://dogpan.com/f/lYAYiX/WinSet.exe",
             "hash": "6004b8521fcb617a318a1d0194e87e3fff0bda9c5d16ae8621e246a675bd590a"
         }
     },
-    "bin": "Win11Set.exe",
+    "bin": "WinSet.exe",
     "shortcuts": [
         [
-            "WindowsSet.exe",
+            "WinSet.exe",
             "Windows轻松设置"
         ]
     ]
