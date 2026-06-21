@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.softwareok.com/Download/NewFileTime_x64.zip",
-            "hash": "请替换为真实的SHA256哈希值"
+            "hash": "58f2cf43399b107f0bb95f5ec938b851ae18d7b5628bd4e026286e12e3d4cc9d"
         }
     },
     "bin": "NewFileTime_x64.exe",
