@@ -1,6 +1,6 @@
 {
     "version": "1.1.2",
-    "description": "Windows11轻松设置 - Windows 11 系统常规快捷设置与综合优化单文件工具",
+    "description": "Windows轻松设置 - Windows系统常规快捷设置与综合优化单文件工具",
     "homepage": "https://github.com/",
     "license": "Freeware",
     "architecture": {
@@ -13,7 +13,7 @@
     "shortcuts": [
         [
             "Win11Set.exe",
-            "Win11Set"
+            "Windows轻松设置"
         ]
     ]
 }
