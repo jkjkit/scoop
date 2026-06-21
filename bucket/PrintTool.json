@@ -1,0 +1,19 @@
+{
+    "version": "1.0.0",
+    "description": "PrintTool - 局域网打印机共享一键修复与管理工具",
+    "homepage": "https://github.com/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://dogpan.com/f/gJrBIG/PrintTool.exe",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "PrintTool.exe",
+    "shortcuts": [
+        [
+            "PrintTool.exe",
+            "打印机共享维护"
+        ]
+    ]
+}
