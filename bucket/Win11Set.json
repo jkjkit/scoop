@@ -5,14 +5,14 @@
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://dogpan.com/f/jRx7CR/Win11Set.exe",
+            "url": "https://dogpan.com/f/kRzQF5/WindowsSet.exe",
             "hash": "6004b8521fcb617a318a1d0194e87e3fff0bda9c5d16ae8621e246a675bd590a"
         }
     },
     "bin": "Win11Set.exe",
     "shortcuts": [
         [
-            "Win11Set.exe",
+            "WindowsSet.exe",
             "Windows轻松设置"
         ]
     ]
