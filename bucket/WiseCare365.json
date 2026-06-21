@@ -1,0 +1,19 @@
+{
+    "version": "7.3.2",
+    "description": "Wise Care 365 Pro - 世界领先的系统性能优化与隐私清理强力工具箱",
+    "homepage": "https://www.wisecleaner.com/wise-care-365.html",
+    "license": "Shareware",
+    "architecture": {
+        "64bit": {
+            "url": "https://dogpan.com/f/9rlls2/WiseCare365Pro.exe",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "WiseCare365Pro.exe",
+    "shortcuts": [
+        [
+            "WiseCare365Pro.exe",
+            "Wise Care 365 Pro"
+        ]
+    ]
+}
