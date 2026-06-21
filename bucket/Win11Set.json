@@ -1,0 +1,19 @@
+{
+    "version": "1.1.2",
+    "description": "Windows11轻松设置 - Windows 11 系统常规快捷设置与综合优化单文件工具",
+    "homepage": "https://github.com/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://dogpan.com/f/jRx7CR/Win11Set.exe",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "Win11Set.exe",
+    "shortcuts": [
+        [
+            "Win11Set.exe",
+            "Win11Set"
+        ]
+    ]
+}
