@@ -1,0 +1,19 @@
+{
+    "version": "3.0",
+    "description": "Pantone - 潘通色号查询与色彩管理单文件绿色工具",
+    "homepage": "https://github.com/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://dogpan.com/f/mZBwIW/Pantone.exe",
+            "hash": "fcd105bd8ab3a5a388e85b0a395a639cb78f7f3c"
+        }
+    },
+    "bin": "Pantone.exe",
+    "shortcuts": [
+        [
+            "Pantone.exe",
+            "潘通色卡"
+        ]
+    ]
+}
