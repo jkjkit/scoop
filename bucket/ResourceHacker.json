@@ -1,0 +1,19 @@
+{
+    "version": "5.2.8",
+    "description": "Resource Hacker - 经典的 Windows 可执行文件资源编译器、查看器和修改工具 (官方原生版)",
+    "homepage": "https://www.angusj.com/resourcehacker/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.angusj.com/resourcehacker/resource_hacker.zip",
+            "hash": "请替换为真实的SHA256哈希值"
+        }
+    },
+    "bin": "ResourceHacker.exe",
+    "shortcuts": [
+        [
+            "ResourceHacker.exe",
+            "Resource Hacker"
+        ]
+    ]
+}
