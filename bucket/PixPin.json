@@ -1,23 +1,48 @@
 {
+    "version": "3.4.3.2",
+    "description": "Screenshots, screen recording, OCR tool.",
     "homepage": "https://pixpin.cn/",
-    "license": "unknown",
-    "version": "3.2.3.1",
-    "url": "https://download.pixpin.cn/PixPin_cn_zh-cn_3.2.3.1.zip",
-    "hash": "52f469aa83d8f6bf8615cb68b9afb95f22d7c766dc513471c8f14bf39801be31",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://pixpin.cn/docs/policy/tos_zh_CN"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://down.pixpin.cn/PixPin_win_3.4.3.2.zip#/dl.zip",
+            "hash": "1ed2b048f7e1468cdd3dc869c3db0653d9308ffe4f48fb42091b0b559a90b211"
+        }
+    },
     "extract_dir": "PixPin",
-    "bin": "PixPin.exe",
     "shortcuts": [
         [
             "PixPin.exe",
             "PixPin"
         ]
     ],
-    "persist": "config",
+    "persist": [
+        "Config",
+        "Data",
+        "History",
+        "OcrModel"
+    ],
+    "post_install": [
+        "$configPath = \"$persist_dir\\Config\\PixPinConfig.json\"",
+        "if (Test-Path $configPath) {",
+        "    return",
+        "}",
+        "$timestamp = [DateTimeOffset]::Now.ToUnixTimeSeconds()",
+        "$content = '{\"System.Update.UpgradeMode#s.win\":{\"t\":' + $timestamp + ',\"v\":0}}'",
+        "$content | Set-Content -Path $configPath -Encoding UTF8"
+    ],
     "checkver": {
         "url": "https://pixpin.cn/download/",
-        "regex": "PixPin_cn_zh-cn_([\\d.]+).zip"
+        "regex": "PixPin_win_(\\d+(?:\\.\\d+)*)"
     },
     "autoupdate": {
-        "url": "https://download.pixpin.cn/PixPin_cn_zh-cn_$version.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://down.pixpin.cn/PixPin_win_$version.zip#/dl.zip"
+            }
+        }
     }
 }
