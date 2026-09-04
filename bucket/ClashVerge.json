@@ -1,56 +1,60 @@
 {
-    "version": "2.5.1",
-    "description": "Continuation of Clash Verge - A Clash Meta GUI based on Tauri.",
+    "version": "2.5.2",
+    "description": "一款基于 Tauri 的现代图形用户界面客户端，提供定制化的代理体验 | A modern GUI client based on Tauri for tailored proxy experience",
     "homepage": "https://github.com/clash-verge-rev/clash-verge-rev",
-    "license": "GPL-3.0-only",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge_2.5.1_x64-setup.exe#/dl.7z",
-            "hash": "203bf29f7a5f0dc5fbc5e42772de6a474501603a19120c2f1259bb27c067df51"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_x64-setup.exe",
+            "hash": "ba42f00b1082e352352080170fe86ae411bcc854cb13f1b8bebc9025e8a7cbf4"
         },
         "arm64": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge_2.5.1_arm64-setup.exe#/dl.7z",
-            "hash": "26610cfd44a21cb95ae4c3e94a0ec8b412a30b06da4ee0e20cb70f122bc6a0d0"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_arm64-setup.exe",
+            "hash": "973fafb5f154e541b34c1315f7de7440daf68d05f2e52fa08da2bcc71b6c3214"
         }
     },
-    "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse",
-    "installer": {
-        "script": [
-            "ensure \"$persist_dir\" | Out-Null",
-            "$targetPath = \"$env:APPDATA\\io.github.clash-verge-rev.clash-verge-rev\"",
-            "$linkType = (Get-Item -Path $targetPath -ErrorAction SilentlyContinue).LinkType",
-            "if (Test-Path $targetPath) {",
-            "    if ($linkType -eq 'Junction') {",
-            "        Remove-Item -Path $targetPath -Force",
-            "    } else {",
-            "        Get-ChildItem -Path $targetPath -Force | Move-Item -Destination $persist_dir -Force",
-            "        Remove-Item -Path $targetPath -Force -Recurse",
-            "    }",
-            "}",
-            "New-Item \"$env:APPDATA\\io.github.clash-verge-rev.clash-verge-rev\" -ItemType Junction -Target \"$persist_dir\" | Out-Null"
-        ]
-    },
+    "location": "$env:ProgramFiles\\Clash Verge",
+    "link": "$env:AppData\\io.github.clash-verge-rev.clash-verge-rev",
+    "cleanup": "$env:LocalAppData\\io.github.clash-verge-rev.clash-verge-rev",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
     "pre_uninstall": [
-        "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
-        "Start-Process \"$dir\\resources\\clash-verge-service-uninstall.exe\" -Wait -Verb 'RunAs' -WindowStyle 'Hidden'; Start-Sleep -Seconds 3"
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
     ],
-    "uninstaller": {
-        "script": "Remove-Item \"$env:APPDATA\\io.github.clash-verge-rev.clash-verge-rev\" -Recurse -Force -ErrorAction 'SilentlyContinue'"
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
     },
-    "shortcuts": [
-        [
-            "clash-verge.exe",
-            "Clash Verge"
-        ]
-    ],
-    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$version/Clash.Verge_$version_x64-setup.exe#/dl.7z"
+                "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$version/Clash.Verge_$version_x64-setup.exe"
             },
             "arm64": {
-                "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$version/Clash.Verge_$version_arm64-setup.exe#/dl.7z"
+                "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$version/Clash.Verge_$version_arm64-setup.exe"
             }
         }
     }
