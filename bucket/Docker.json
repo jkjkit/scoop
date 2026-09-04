@@ -1,5 +1,5 @@
 {
-    "version": "29.5.2",
+    "version": "29.8.0",
     "description": "Docker CLI & Docker Engine for Windows containers. Docker is an open platform for developing, shipping, and running applications.",
     "homepage": "https://docs.docker.com/engine",
     "license": "Apache-2.0",
