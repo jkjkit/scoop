@@ -1,68 +1,64 @@
 {
-    "version": "1.91.180",
-    "description": "Secure, Fast & Private Web Browser with Adblocker",
+    "version": "1.94.119",
+    "description": "带有广告拦截器的安全、快速且私密的网络浏览器 | Secure, Fast & Private Web Browser with Adblocker",
     "homepage": "https://brave.com",
     "license": {
-        "identifier": "Freeware,BSD-3-Clause,GPL-3.0-only,...",
-        "url": "https://github.com/brave/brave-browser/blob/master/LICENSE"
+        "identifier": "MPL-2.0"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.91.180/brave-v1.91.180-win32-x64.zip",
-            "hash": "4596d665d0549872ba4008dbcc742575d95b218d4199665c09a8374c87224417"
-        },
-        "32bit": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.91.180/brave-v1.91.180-win32-ia32.zip",
-            "hash": "a974af30f233b6ab2c43f8fbec082892670cd9542d0b7a41c7b32d6f1cdf3d11"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.94.119/brave-v1.94.119-win32-x64.zip",
+            "hash": "cf985dce982c3fc79ef558509093602fb3e1d9fc7958af9ec1875b544c987241"
         },
         "arm64": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.91.180/brave-v1.91.180-win32-arm64.zip",
-            "hash": "b7139e873986bab5b97d2162c62ea59a0d39293ff675a05ff09baba81ea1c88d"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.94.119/brave-v1.94.119-win32-arm64.zip",
+            "hash": "53631aa06b86cae21f9e5a34d9f25bfb4cd72c2bcd1a414525cdb8b38dc32873"
         }
     },
-    "bin": [
-        [
-            "brave.exe",
-            "brave",
-            "--user-data-dir=\"$dir\\User Data\""
-        ]
-    ],
+    "extract_to": "app",
+    "bin": "app\\brave.exe",
     "shortcuts": [
         [
-            "brave.exe",
-            "Brave",
-            "--user-data-dir=\"$dir\\User Data\""
+            "app\\brave.exe",
+            "Brave"
         ]
     ],
-    "post_install": [
-        "if (!(Test-Path \"$dir\\User Data\\*\") -and (Test-Path \"$persist_dir\\data\")) {",
-        "    info '[Portable Mode]: Copying user data from portapps data directory . . .'",
-        "    Copy-Item \"$persist_dir\\data\\*\" \"$dir\\User Data\" -Recurse",
-        "}",
-        "if (!(Test-Path \"$dir\\User Data\\*\") -and (Test-Path \"$env:LocalAppData\\BraveSoftware\\Brave-Browser\\User Data\")) {",
-        "    info '[Portable Mode]: Copying user data from local application data directory . . .'",
-        "    Copy-Item \"$env:LocalAppData\\BraveSoftware\\Brave-Browser\\User Data\\*\" \"$dir\\User Data\" -Recurse",
-        "}"
+    "link": "$env:LocalAppData\\BraveSoftware\\Brave-Browser",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
     ],
-    "persist": "User Data",
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
     "checkver": {
-        "url": "https://brave-browser-downloads.s3.brave.com/latest/release-windows-x64.version",
-        "regex": "([\\d.]+)"
+        "github": {
+            "channel": "latest"
+        }
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-x64.zip"
             },
-            "32bit": {
-                "url": "https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-ia32.zip"
-            },
             "arm64": {
                 "url": "https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-arm64.zip"
             }
-        },
-        "hash": {
-            "url": "$url.sha256"
         }
     }
 }
