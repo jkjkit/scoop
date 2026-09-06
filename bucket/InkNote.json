@@ -6,7 +6,7 @@
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/likehao19/InkNote/releases/download/v0.2.9/InkNote-Windows-x64-Setup.exe#/dl.7z",
+            "url": "https://github.com/likehao19/InkNote/releases/download/v0.2.9/InkNote-Windows-x64-Setup.exe",
             "hash": "c9c51e54d58a916d1b0a0ff957ec98174dfc98d86933c5de764e3815801fc64e"
         }
     },
