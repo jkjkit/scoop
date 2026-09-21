@@ -1,0 +1,30 @@
+{
+    "version": "0.5.1",
+    "description": "MSSH - 轻量级SSH 客户端",
+    "homepage": "https://mjj.ee/mssh",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://s3.mjj.ee/mjj-mssh/mssh/releases/0.5.1/windows/mssh-windows-amd64.7z",
+            "hash": "TODO: 请填入该文件的 SHA256 哈希值"
+        }
+    },
+    "bin": "mssh.exe",
+    "shortcuts": [
+        [
+            "mssh.exe",
+            "MSSH"
+        ]
+    ],
+    "checkver": {
+        "url": "https://mjj.ee/mssh",
+        "regex": "releases/([\\d.]+)/windows"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://s3.mjj.ee/mjj-mssh/mssh/releases/$version/windows/mssh-windows-amd64.7z"
+            }
+        }
+    }
+}
