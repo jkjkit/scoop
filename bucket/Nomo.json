@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/nomo-md/nomo/releases/download/v0.5.2/Nomo_0.5.2_x64.zip",
-            "hash": ""
+            "hash": "98324a65460594252f8225a08ed82e38f4cafcd4c0dd8fae365a084db3a65615"
         }
     },
     "bin": "Nomo.exe",
