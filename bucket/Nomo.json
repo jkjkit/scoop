@@ -1,0 +1,27 @@
+{
+    "version": "0.5.2",
+    "description": "Nomo Markdown App",
+    "homepage": "https://github.com/nomo-md/nomo",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nomo-md/nomo/releases/download/v0.5.2/Nomo_0.5.2_x64.zip",
+            "hash": "TODO: 请填入该文件的 SHA256 哈希值"
+        }
+    },
+    "bin": "Nomo.exe",
+    "shortcuts": [
+        [
+            "Nomo.exe",
+            "Nomo"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/nomo-md/nomo/releases/download/v$version/Nomo_$version_x64.zip"
+            }
+        }
+    }
+}
