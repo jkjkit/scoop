@@ -2,17 +2,18 @@
     "version": "0.5.2",
     "description": "Nomo Markdown App",
     "homepage": "https://github.com/nomo-md/nomo",
-    "license": "Unknown",
+    "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/nomo-md/nomo/releases/download/v0.5.2/Nomo_0.5.2_x64.zip",
             "hash": "98324a65460594252f8225a08ed82e38f4cafcd4c0dd8fae365a084db3a65615"
         }
     },
-    "bin": "Nomo.exe",
+    "extract_dir": "Nomo_0.5.2_x64",
+    "bin": "nomo.exe",
     "shortcuts": [
         [
-            "Nomo.exe",
+            "nomo.exe",
             "Nomo"
         ]
     ],
@@ -22,6 +23,7 @@
             "64bit": {
                 "url": "https://github.com/nomo-md/nomo/releases/download/v$version/Nomo_$version_x64.zip"
             }
-        }
+        },
+        "extract_dir": "Nomo_$version_x64"
     }
 }
