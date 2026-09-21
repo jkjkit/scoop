@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/clip-rss/clip/releases/download/v0.6.2/Clip-windows-amd64.zip",
-            "hash": "TODO: 请填入该文件的 SHA256 哈希值"
+            "hash": "1cbe2a378b9cacd9ffec094f1b0ef35f52b2f2b2a7fa0347ce8e7a57156eb85c"
         }
     },
     "bin": "Clip.exe",
