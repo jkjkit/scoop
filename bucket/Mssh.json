@@ -1,6 +1,6 @@
 {
     "version": "0.5.1",
-    "description": "MSSH - 轻量级SSH 客户端",
+    "description": "MSSH - 轻量级 SSH 客户端",
     "homepage": "https://mjj.ee/mssh",
     "license": "Freeware",
     "architecture": {
@@ -9,14 +9,17 @@
             "hash": "461eede5aed59c20dcd4786b515014aaed3c90ed691cf9d9c296d8854b449fa1"
         }
     },
-    "bin": "MrRSS.exe",
+    "bin": "mssh-windows-amd64.exe",
     "shortcuts": [
         [
-            "mssh.exe",
+            "mssh-windows-amd64.exe",
             "MSSH"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://mjj.ee/mssh",
+        "regex": "releases/([\\d.]+)/windows"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
