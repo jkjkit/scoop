@@ -1,0 +1,27 @@
+{
+    "version": "0.6.2",
+    "description": "Clip - RSS Reader",
+    "homepage": "https://github.com/clip-rss/clip",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/clip-rss/clip/releases/download/v0.6.2/Clip-windows-amd64.zip",
+            "hash": "TODO: 请填入该文件的 SHA256 哈希值"
+        }
+    },
+    "bin": "Clip.exe",
+    "shortcuts": [
+        [
+            "Clip.exe",
+            "Clip"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/clip-rss/clip/releases/download/v$version/Clip-windows-amd64.zip"
+            }
+        }
+    }
+}
