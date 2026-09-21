@@ -6,13 +6,13 @@
     "architecture": {
         "64bit": {
             "url": "https://s3.mjj.ee/mjj-mssh/mssh/releases/0.5.1/windows/mssh-windows-amd64.7z",
-            "hash": "461eede5aed59c20dcd4786b515014aaed3c90ed691cf9d9c296d8854b449fa1"
+            "hash": "TODO: 填入 Get-FileHash mssh-windows-amd64.7z 获取的哈希"
         }
     },
-    "bin": "mssh-windows-amd64.exe",
+    "bin": "mssh.exe",
     "shortcuts": [
         [
-            "mssh-windows-amd64.exe",
+            "mssh.exe",
             "MSSH"
         ]
     ],
