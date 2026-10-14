@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/Y-ASLant/ElegantClipboard/releases/download/v1.2.10/ElegantClipboard_1.2.10_x64_portable.exe",
-            "hash": "a51b5c00e12e7379761c56f26487e47f7171e21b777a83d0f7a77b83d1c920f6"
+            "hash": "ce457c887b912c6f09e529cf9d376cfe1bf4adcd3c54269a5ff2c4a578aa148e"
         }
     },
     "bin": [
