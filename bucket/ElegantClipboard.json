@@ -1,11 +1,11 @@
 {
-    "version": "1.2.7",
+    "version": "1.2.10",
     "description": "ElegantClipboard - 低占用、高性能、现代化、完全本地化的离线剪贴板工具",
     "homepage": "https://github.com/Y-ASLant/ElegantClipboard",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Y-ASLant/ElegantClipboard/releases/download/v1.2.7/ElegantClipboard_1.2.7_x64_portable.exe#/ElegantClipboard.exe",
+            "url": "https://github.com/Y-ASLant/ElegantClipboard/releases/download/v1.2.10/ElegantClipboard_1.2.10_x64_portable.exe",
             "hash": "bee014dc47f072f1fa50bfe2015ff9735aafa091a6fd9817a4d66aed4b5dab9a"
         }
     },
