@@ -1,27 +1,31 @@
 {
     "version": "1.2.10",
-    "description": "ElegantClipboard - 低占用、高性能、现代化、完全本地化的离线剪贴板工具",
+    "description": "ElegantClipboard - A modern and elegant clipboard manager.",
     "homepage": "https://github.com/Y-ASLant/ElegantClipboard",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Y-ASLant/ElegantClipboard/releases/download/v1.2.10/ElegantClipboard_1.2.10_x64_portable.exe",
-            "hash": "bee014dc47f072f1fa50bfe2015ff9735aafa091a6fd9817a4d66aed4b5dab9a"
+            "hash": "amt:a51b5c00e12e7379761c56f26487e47f7171e21b777a83d0f7a77b83d1c920f6"
         }
     },
-    "bin": "ElegantClipboard.exe",
-    "shortcuts": [
+    "bin": [
         [
-            "ElegantClipboard.exe",
+            "ElegantClipboard_1.2.10_x64_portable.exe",
             "ElegantClipboard"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/Y-ASLant/ElegantClipboard"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Y-ASLant/ElegantClipboard/releases/download/v$version/ElegantClipboard_$version_x64_portable.exe#/ElegantClipboard.exe"
+                "url": "https://github.com/Y-ASLant/ElegantClipboard/releases/download/v$version/ElegantClipboard_$version_x64_portable.exe"
             }
+        },
+        "hash": {
+            "url": "$baseurl/latest"
         }
     }
 }
