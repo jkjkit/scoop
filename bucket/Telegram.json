@@ -1,20 +1,20 @@
 {
-    "version": "7.2.5",
+    "version": "7.3.1",
     "description": "A messaging app with a focus on speed and security",
     "homepage": "https://telegram.org",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.2.5/tportable-x64.7.2.5.zip",
-            "hash": "5b0d053ca357cab2c3e362f20f4201187e1391f7a732e8b77f6c8eafcae7c082"
+            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.1/td-portable-win-x64-7.3.1.zip",
+            "hash": "e3ec293ecadce43aab947e8ef274456529e634a6841e6b661eca6efe600ffcda"
         },
         "32bit": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.2.5/tportable.7.2.5.zip",
-            "hash": "2793954df2b3c1a78b873255a70e1f64fa208139f15dc9a94e8a6aa55abe62b0"
+            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.1/td-portable-win-x86-7.3.1.zip",
+            "hash": "b261fca50e1c566874ea44ca051c34bcbd507ee44a57f706d86a0a37c7c7d295"
         },
         "arm64": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.2.5/tportable-arm64.7.2.5.zip",
-            "hash": "feee46465449c88381a0d8978657c472676cbfcd838e1be70d8c96cdcbf4347b"
+            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.1/td-portable-win-arm-7.3.1.zip",
+            "hash": "6f970ff8fdd9a1520f9a662c697ed52febc38b8d83537f7d6754b1c18b4424b9"
         }
     },
     "extract_dir": "Telegram",
@@ -33,13 +33,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable-x64.$version.zip"
+                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/td-portable-win-x64-$version.zip"
             },
             "32bit": {
-                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable.$version.zip"
+                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/td-portable-win-x86-$version.zip"
             },
             "arm64": {
-                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable-arm64.$version.zip"
+                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/td-portable-win-arm-$version.zip"
             }
         }
     }
