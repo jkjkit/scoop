@@ -1,12 +1,12 @@
 {
     "version": "1.5.1",
-    "description": "A lightweight screenshot and annotation tool with optional OCR support.",
+    "description": "A lightweight screenshot and annotation tool with OCR support.",
     "homepage": "https://github.com/MrTangLuyao/sniplite",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MrTangLuyao/sniplite/releases/download/v1.5.1/sniplite_1.5.1_portable_x64.exe#/sniplite.exe",
-            "hash": "fa98db7bb59f0851bf54cd2292b5456633dcf450b78e7e0eab62ba5da5555270"
+            "url": "https://github.com/MrTangLuyao/sniplite/releases/download/v1.5.1/sniplite_1.5.1_portable_with_OCR_x64.exe#/sniplite.exe",
+            "hash": "e85d968bca11be90ed52cec6ef64e63633cad5d699089230e501d4d7ddcab639"
         }
     },
     "bin": "sniplite.exe",
@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/MrTangLuyao/sniplite/releases/download/v$version/sniplite_$version_portable_x64.exe#/sniplite.exe"
+                "url": "https://github.com/MrTangLuyao/sniplite/releases/download/v$version/sniplite_$version_portable_with_OCR_x64.exe#/sniplite.exe"
             }
         }
     }
