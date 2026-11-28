@@ -1,5 +1,5 @@
 {
-    "version": "2.1",
+    "version": "2.2.7",
     "description": "zRenamer - 批量文件重命名工具，支持正则表达式、计数器及替换等丰富规则",
     "homepage": "https://github.com/",
     "license": "Freeware",
